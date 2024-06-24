@@ -62,7 +62,7 @@ const rules: KarabinerRules[] = [
     // b = "B"rowse
     b: {
       t: open("https://twitter.com"),
-      // Quarterly "P"lan
+      // Quarterly "P"
       p: open("https://qrtr.ly/plan"),
       y: open("https://news.ycombinator.com"),
       f: open("https://facebook.com"),
@@ -75,10 +75,10 @@ const rules: KarabinerRules[] = [
       c: app("Notion Calendar"),
       v: app("Visual Studio Code"),
       d: app("Discord"),
-      s: app("Slack"),
-      e: app("Superhuman"),
+      k: app("Slack"),
+      s: app("Spark"),
       n: app("Notion"),
-      t: app("Terminal"),
+      t: app("iTerm"),
       // Open todo list managed via *H*ypersonic
       h: open(
         "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
@@ -90,10 +90,10 @@ const rules: KarabinerRules[] = [
       r: app("Texts"),
       // "i"Message
       i: app("Texts"),
-      p: app("Spotify"),
-      a: app("iA Presenter"),
+      p: app("Sonos"),
+      // a: app("iA Presenter"),
       // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
+      // w: open("Texts"),
       l: open(
         "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
       ),
@@ -241,9 +241,9 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      e: open(
-        `raycast://extensions/thomas/elgato-key-light/toggle?launchType=background`
-      ),
+      // e: open(
+      //   `raycast://extensions/thomas/elgato-key-light/toggle?launchType=background`
+      // ),
       // "D"o not disturb toggle
       d: open(
         `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
@@ -287,7 +287,7 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "page_up" }],
       },
     },
-
+π
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
     c: {
       p: {
@@ -332,7 +332,7 @@ fs.writeFileSync(
   JSON.stringify(
     {
       global: {
-        show_in_menu_bar: false,
+        show_in_menu_bar: true,
       },
       profiles: [
         {

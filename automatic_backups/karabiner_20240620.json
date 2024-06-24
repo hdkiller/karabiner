@@ -1,6 +1,6 @@
 {
   "global": {
-    "show_in_menu_bar": true
+    "show_in_menu_bar": false
   },
   "profiles": [
     {
@@ -511,7 +511,7 @@
                 "description": "Open -a 'Slack.app'",
                 "type": "basic",
                 "from": {
-                  "key_code": "k",
+                  "key_code": "s",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -529,13 +529,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Spark.app'"
+                    "shell_command": "open -a 'Superhuman.app'"
                   }
                 ],
-                "description": "Open -a 'Spark.app'",
+                "description": "Open -a 'Superhuman.app'",
                 "type": "basic",
                 "from": {
-                  "key_code": "s",
+                  "key_code": "e",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -577,10 +577,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'iTerm.app'"
+                    "shell_command": "open -a 'Terminal.app'"
                   }
                 ],
-                "description": "Open -a 'iTerm.app'",
+                "description": "Open -a 'Terminal.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "t",
@@ -745,13 +745,61 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Sonos.app'"
+                    "shell_command": "open -a 'Spotify.app'"
                   }
                 ],
-                "description": "Open -a 'Sonos.app'",
+                "description": "Open -a 'Spotify.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "p",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'iA Presenter.app'"
+                  }
+                ],
+                "description": "Open -a 'iA Presenter.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open Texts"
+                  }
+                ],
+                "description": "Open Texts",
+                "type": "basic",
+                "from": {
+                  "key_code": "w",
                   "modifiers": {
                     "optional": [
                       "any"
